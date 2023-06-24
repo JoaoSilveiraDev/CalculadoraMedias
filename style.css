@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+:root{
+    --cor-primaria: rgb(217, 237, 117);
+    --cor-secundaria: rgb(219, 80, 80);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+}
+.cabecalho{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-primaria);
+}
+.cabecalho__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.cabecalho__imagem{
+    height: 30px;
+    width: 30px;
+}
+.apresentacao{
+    height: 80vh;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apresentacao__caixa{
+    height: 60%;
+    width: 70%;
+    background-image: linear-gradient(
+        180deg, var(--cor-primaria), white, var(--cor-primaria)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7%;
+    
+}
+.apresentacao__caixa__input{
+    width: 50%;
+    height: 15%;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+.apresentacao__caixa__botao{
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    background-image: linear-gradient(
+        180deg, rgb(240, 47, 47), rgb(144, 4, 4)
+    );
+}
+.rodape{
+    height: 10vh;
+    background-image: linear-gradient(
+        180deg, rgb(240, 47, 47), rgb(144, 4, 4)
+    );
+}
+@media (max-width: 414px){
+    .apresentacao__caixa__botao{
+        width: 30%;
+    }
+    .apresentacao__caixa__input{
+        font-size: 14px;
+        width: 90%;
+    }
+}
